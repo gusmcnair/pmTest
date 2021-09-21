@@ -13,11 +13,16 @@
     <script>
             console.log('about to set event listener')
             window.addEventListener("message", (event) => {
+              if (event.origin !== "127.0.0.1:5500/test.html")
+                  return;
+                
                 var kevin = document.getElementsByTagName('body')[0]
                 kevin.style.background = "blue"
                 event.source.postMessage("sup");
                 console.log('hello 2')
             })
+        
+        
      </script>
 </head>
 <body>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy IK site</title>
+    <style>
+      body {
+        background: red;
+      }
+    </style>
+    <script>
+        function addEventListener() {
+            window.addEventListener("message", (event) => {
+                alert("hello there")
+                var kevin = document.getElementsByTagName('body')
+                kevin.style.display = "none"
+                event.source.postMessage("sup");
+                console.log('hello 2')
+            })
+        }
+        addEventListener()
+     </script>
+</head>
+<body>
+    
+</body>
+</html>
+

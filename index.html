@@ -13,7 +13,6 @@
     <script>
             console.log('about to set event listener')
             window.addEventListener("message", (event) => {
-                alert("hello there")
                 var kevin = document.getElementsByTagName('body')[0]
                 kevin.style.background = "blue"
                 event.source.postMessage("sup");

@@ -11,7 +11,6 @@
       }
     </style>
     <script>
-        function addEventListener() {
             window.addEventListener("message", (event) => {
                 alert("hello there")
                 var kevin = document.getElementsByTagName('body')
@@ -19,8 +18,6 @@
                 event.source.postMessage("sup");
                 console.log('hello 2')
             })
-        }
-        addEventListener()
      </script>
 </head>
 <body>
